@@ -1,0 +1,30 @@
+# 1. Перейдите в папку, где лежит ваш проект (или создайте новую)
+cd ~/Desktop
+mkdir scanner_app
+cd scanner_app
+
+# 2. Создайте файл server.py (вставьте ваш код, я покажу пример)
+cat > server.py <<'EOF'
+# здесь ваш код server.py
+EOF
+
+# 3. Создайте папку templates и файл new_index.html
+mkdir templates
+cat > templates/new_index.html <<'EOF'
+# здесь ваш HTML-код
+EOF
+
+# 4. Инициализируйте Git
+git init
+
+# 5. Добавьте все файлы
+git add .
+
+# 6. Сделайте коммит
+git commit -m "Первый коммит"
+
+# 7. Добавьте удалённый репозиторий (ваш на GitHub)
+git remote add origin https://github.com/ваш_логин/имя_репозитория.git
+
+# 8. Отправьте на GitHub (при запросе пароля вставьте ТОКЕН, а не пароль)
+git push -u origin main
